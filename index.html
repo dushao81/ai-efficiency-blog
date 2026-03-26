@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI效率手册 - 职场人的AI工具指南</title>
+    <meta name="description" content="用AI提升10倍效率！职场人必备的AI工具清单、使用技巧和实战案例。">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .search-container {
+            max-width: 600px;
+            margin: 30px auto 0;
+            position: relative;
+        }
+        .search-container input {
+            width: 100%;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .section-title {
+            font-size: 1.5rem;
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3b82f6;
+            display: inline-block;
+        }
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .tip-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tip-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        .tip-card h3 {
+            color: #1e40af;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .tip-card p { color: #64748b; font-size: 0.95rem; margin-bottom: 15px; }
+        .tip-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: #eff6ff;
+            color: #3b82f6;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .article-list { margin-top: 30px; }
+        .article-item {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .article-item:hover {
+            background: #f1f5f9;
+            transform: translateX(5px);
+        }
+        .article-item h3 { color: #1e293b; margin-bottom: 8px; }
+        .article-item p { color: #64748b; font-size: 0.9rem; margin-bottom: 10px; }
+        .article-meta { font-size: 0.8rem; color: #94a3b8; }
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .tips-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🚀 AI效率手册</h1>
+        <p>用AI提升10倍效率！职场人必备的AI工具清单、使用技巧和实战案例</p>
+        <div class="search-container">
+            <input type="text" placeholder="搜索技巧..." id="searchInput">
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">📋 高频使用技巧</h2>
+        <div class="tips-grid" id="tipsGrid">
+            <div class="tip-card">
+                <h3>📧 邮件处理</h3>
+                <p>用ChatGPT快速起草回复、总结长邮件、自动分类优先级。每天节省1小时邮件处理时间。</p>
+                <span class="tip-tag">省时60%</span>
+            </div>
+            <div class="tip-card">
+                <h3>📊 数据分析</h3>
+                <p>上传Excel，用自然语言让AI帮你分析趋势、生成图表、撰写报告。告别熬夜做报表。</p>
+                <span class="tip-tag">省时80%</span>
+            </div>
+            <div class="tip-card">
+                <h3>📝 会议纪要</h3>
+                <p>录音转文字后，用AI自动提取要点、生成待办事项、发送会议总结。开会不再手忙脚乱。</p>
+                <span class="tip-tag">省时70%</span>
+            </div>
+            <div class="tip-card">
+                <h3>📑 文档处理</h3>
+                <p>PDF太长看不完？AI帮你总结核心内容、提取关键数据、翻译外文文献。</p>
+                <span class="tip-tag">省时75%</span>
+            </div>
+            <div class="tip-card">
+                <h3>💼 PPT制作</h3>
+                <p>输入主题，AI自动生成PPT大纲和内容。配合Gamma等工具，30分钟完成一周的汇报材料。</p>
+                <span class="tip-tag">省时90%</span>
+            </div>
+            <div class="tip-card">
+                <h3>🔍 信息搜集</h3>
+                <p>竞品调研、行业分析、市场报告...让AI帮你快速整理信息，输出结构化分析。</p>
+                <span class="tip-tag">省时65%</span>
+            </div>
+        </div>
+
+        <h2 class="section-title">📚 实战案例</h2>
+        <div class="article-list">
+            <div class="article-item">
+                <h3>💼 从月薪5000到20000：我是如何用AI提升工作效率的</h3>
+                <p>分享我是如何用AI工具组合，在3个月内将工作效率提升10倍，获得晋升加薪的真实经历。</p>
+                <div class="article-meta">阅读时间 5分钟 · 案例分享</div>
+            </div>
+            <div class="article-item">
+                <h3>📧 5分钟处理100封邮件的AI工作流</h3>
+                <p>详细介绍我用ChatGPT+邮件规则实现邮件自动分类、智能回复、批量处理的全流程。</p>
+                <div class="article-meta">阅读时间 8分钟 · 工作流</div>
+            </div>
+            <div class="article-item">
+                <h3>📊 财务人必备的10个AI工具（附使用技巧）</h3>
+                <p>财务报表、数据分析、预算编制...财务人的AI效率工具清单，让加班成为历史。</p>
+                <div class="article-meta">阅读时间 6分钟 · 工具推荐</div>
+            </div>
+            <div class="article-item">
+                <h3>📝 用AI写周报被老板夸了！模板和技巧分享</h3>
+                <p>不再为写周报发愁！分享我用AI生成周报的方法论，让每周汇报变成展示成绩的机会。</p>
+                <div class="article-meta">阅读时间 4分钟 · 技巧分享</div>
+            </div>
+            <div class="article-item">
+                <h3>🤖 2024年最值得学习的5个AI技能</h3>
+                <p>普通人学AI，从这5个技能开始。不需要编程基础，30天就能上手，大幅提升职场竞争力。</p>
+                <div class="article-meta">阅读时间 7分钟 · 学习指南</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 AI效率手册 | 用AI提升效率，让工作更轻松</p>
+        <p style="margin-top:10px;font-size:0.9rem;">最后更新：2024-03-26 | 持续更新中...</p>
+    </footer>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const term = this.value.toLowerCase();
+            document.querySelectorAll('.tip-card').forEach(card => {
+                const text = card.textContent.toLowerCase();
+                card.style.display = text.includes(term) ? 'block' : 'none';
+            });
+            document.querySelectorAll('.article-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(term) ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
